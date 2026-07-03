@@ -67,3 +67,45 @@ This is a personal lab environment built with VirtualBox and CentOS Stream 10.
 
 This repository does not claim production experience.
 It documents hands-on practice and operational understanding for an infrastructure engineer position.
+
+## Completion Status
+
+| No | Section | Status |
+|---|---|---|
+| 00 | Environment | Completed |
+| 01 | Server Build | Completed |
+| 02 | SSH Operation | Completed |
+| 03 | Web Service | Completed |
+| 04 | Firewall and Network | Completed |
+| 05 | Log Monitoring | Completed |
+| 06 | Backup and Restore | Completed |
+| 07 | Incident Response | Completed |
+| 08 | Customer Hearing | Completed |
+| 09 | AWS Migration Design | Completed |
+
+## Key Points
+
+This portfolio focuses on infrastructure operation and maintenance, not application development.
+
+Main points demonstrated in this repository:
+
+- Linux server setup
+- Remote operation with SSH
+- Web service operation with Apache HTTP Server
+- Firewall and network access control
+- Log monitoring and troubleshooting
+- Backup and restore procedure
+- Incident response documentation
+- Customer environment hearing
+- Basic AWS migration design
+
+## Target Role
+
+This portfolio was created for an entry-level infrastructure engineer role.
+
+It assumes operation and maintenance of a healthcare SaaS infrastructure environment.
+
+## Important Note
+
+This is a personal lab project.
+It does not claim production operation experience.
