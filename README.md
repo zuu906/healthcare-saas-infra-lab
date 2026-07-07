@@ -109,3 +109,12 @@ It assumes operation and maintenance of a healthcare SaaS infrastructure environ
 
 This is a personal lab project.
 It does not claim production operation experience.
+
+## AWS Scope
+
+The AWS section is included as a migration design document.
+
+This portfolio does not claim completed AWS implementation or production AWS operation experience.
+The main implementation scope is the local Linux infrastructure lab using VirtualBox and CentOS Stream 10.
+
+AWS implementation is planned as a future improvement phase.
