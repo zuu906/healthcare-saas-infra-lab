@@ -85,3 +85,20 @@ This is a design-only document.
 The local implementation was performed with VirtualBox and CentOS Stream 10.
 
 I do not claim production AWS operation experience in this portfolio.
+
+## Implementation Status
+
+This section is a design-only document.
+
+The current portfolio implementation was performed locally using VirtualBox and CentOS Stream 10.
+
+AWS implementation is planned as a future phase.
+The next implementation target would be a minimal AWS environment using EC2, Security Group, S3, and CloudWatch Logs.
+
+## Reason for Design-Only Scope
+
+The main purpose of this portfolio is to demonstrate Linux infrastructure operation and maintenance skills first.
+
+Before using cloud services, I focused on understanding basic server operation, SSH access, web service operation, firewall control, log monitoring, backup, restore, and incident response on Linux.
+
+After confirming these basics locally, the next step is to implement the same concept on AWS.
