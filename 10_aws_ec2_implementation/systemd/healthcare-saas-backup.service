@@ -1,0 +1,12 @@
+[Unit]
+Description=Backup Healthcare SaaS web content to S3
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=ec2-user
+Group=ec2-user
+Environment=HOME=/home/ec2-user
+Environment=S3_BUCKET=YOUR_BACKUP_BUCKET
+ExecStart=/home/ec2-user/scripts/backup_web_to_s3.sh
