@@ -46,7 +46,7 @@ The focus is not application development, but infrastructure operation and stabl
 | 07 | 07_incident_response | Incident response |
 | 08 | 08_customer_hearing | Customer hearing sheet |
 | 09 | 09_aws_migration_design | AWS migration design |
-
+| 10 | 10_aws_ec2_implementation | AWS EC2 implementation |
 ## Purpose
 
 This project was created to show that I understand the basic flow of infrastructure operation:
@@ -85,19 +85,24 @@ It documents hands-on practice and operational understanding for an infrastructu
 
 ## Key Points
 
-This portfolio focuses on infrastructure operation and maintenance, not application development.
+This portfolio focuses on infrastructure operation and maintenance rather than application development.
 
-Main points demonstrated in this repository:
+Main areas demonstrated in this repository:
 
-- Linux server setup
-- Remote operation with SSH
-- Web service operation with Apache HTTP Server
+- Linux server setup and administration
+- Remote operation using SSH
+- Apache HTTP Server operation
 - Firewall and network access control
 - Log monitoring and troubleshooting
-- Backup and restore procedure
+- Backup and restore procedures
 - Incident response documentation
 - Customer environment hearing
-- Basic AWS migration design
+- AWS migration design
+- AWS EC2 implementation
+- CloudWatch monitoring and log collection
+- IAM Role based AWS authentication
+- Amazon S3 backup and restore
+- Automated backup using shell scripts and systemd timers
 
 ## Target Role
 
@@ -105,16 +110,42 @@ This portfolio was created for an entry-level infrastructure engineer role.
 
 It assumes operation and maintenance of a healthcare SaaS infrastructure environment.
 
+The project covers both a local Linux infrastructure lab and a minimal AWS implementation.
+
 ## Important Note
 
-This is a personal lab project.
-It does not claim production operation experience.
+This is a personal lab project created for learning and portfolio purposes.
 
-## AWS Scope
+It demonstrates hands-on infrastructure implementation and troubleshooting in a controlled lab environment.
 
-The AWS section is included as a migration design document.
+It does not claim production infrastructure operation experience.
 
-This portfolio does not claim completed AWS implementation or production AWS operation experience.
-The main implementation scope is the local Linux infrastructure lab using VirtualBox and CentOS Stream 10.
+## AWS Implementation
 
-AWS implementation is planned as a future improvement phase.
+The original local infrastructure lab was extended to AWS.
+
+The implemented AWS environment includes:
+
+```text
+Local Client
+     |
+     | SSH
+     v
+Security Group
+     |
+     v
+Amazon EC2
+Amazon Linux 2023
+     |
+     +-- Apache HTTP Server
+     |
+     +-- CloudWatch Agent
+     |     +-- Memory monitoring
+     |     +-- Disk monitoring
+     |     +-- Apache access log
+     |     +-- Apache error log
+     |
+     +-- Backup Script
+             |
+             v
+          Amazon S3
